@@ -1,0 +1,8 @@
+# macOS/Linux shell 脚本强制使用 LF 行尾
+# 否则 shebang 会因 CRLF 被解释为 "/usr/bin/env bash\r" 而失败
+*.sh        text eol=lf
+*.command   text eol=lf
+
+# Windows 脚本使用 CRLF
+*.ps1       text eol=crlf
+*.bat       text eol=crlf
